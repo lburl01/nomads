@@ -1,0 +1,93 @@
+{"https://nomadlist.com/api/v2/list/regions/oceania": {
+"ok": true,
+"updated": {
+"epoch": 1477424088,
+"time": "2016-10-25T19:34:48+00:00",
+"cache": false
+},
+"type": "regions",
+"note": "Values here are derived from averages of cities for regions, so they might be skewed heavily and subject to error.",
+"result": [
+{
+"info": {
+"region": {
+"name": "Oceania",
+"url": "/region/oceania",
+"slug": "oceania"
+},
+"internet": {
+"speed": {
+"download": 16
+}
+},
+"weather": {
+"humidity": {
+"value": 0
+},
+"temperature": {
+"celsius": 21,
+"fahrenheit": 70
+}
+},
+"location": {
+"latitude": -32.60591694375,
+"longitude": 153.255077975
+}
+},
+"people": {
+"checkins": null
+},
+"scores": {
+"nomadScore": 0.68,
+"nomad_score": 0.68,
+"life_score": 0.83,
+"free_wifi_available": 0,
+"nightlife": 0,
+"leisure": 0.8,
+"places_to_work": 0,
+"aircon": 0,
+"safety": 0.88,
+"friendly_to_foreigners": 0,
+"racism": 0,
+"lgbt_friendly": 0,
+"female_friendly": 0
+},
+"media": {
+"image": {
+"250": "/assets/img/cities/auckland-new-zealand-250px.jpg",
+"500": "/assets/img/cities/auckland-new-zealand-500px.jpg",
+"1000": "/assets/img/cities/auckland-new-zealand-1000px.jpg",
+"1500": "/assets/img/cities/auckland-new-zealand-1500px.jpg"
+}
+},
+"cost": {
+"local": {
+"USD": 0
+},
+"nomad": {
+"USD": 2718
+},
+"expat": {
+"USD": 2862
+},
+"longTerm": {
+"USD": 2862
+},
+"shortTerm": {
+"USD": 2718
+}
+}
+}
+],
+"endpoint_examples": [
+"/api/v2/list/places",
+"/api/v2/list/cities",
+"/api/v2/list/cities/amsterdam-netherlands",
+"/api/v2/list/countries",
+"/api/v2/list/countries/netherlands",
+"/api/v2/list/regions",
+"/api/v2/list/regions/europe",
+"/api/v2/list/cities/amsterdam-netherlands/places/work",
+"/api/v2/list/cities/amsterdam-netherlands/places/sleep"
+]
+}}
