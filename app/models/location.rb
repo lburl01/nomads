@@ -12,5 +12,22 @@ class Location < ApplicationRecord
   # end
 
   def get_json
+    # parsed_file = {}
+    #
+    # if File.exists?("memory.json")
+    #   parsed_file = JSON.parse(File.read("memory.json"))
+    #   if parsed_file.key?(url)
+    #     file_data = parsed_file[url]
+    #     puts "found file"
+    #     return file_data
+    #   end
+    # end
+    # puts "out of if"
+    # data = HTTParty.get(url).parsed_response
+    #
+    # parsed_file[url] = data
+    # File.write('memory.json', JSON.dump(parsed_file))
+    #
+    # return data
   end
 end
