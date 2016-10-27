@@ -11,6 +11,10 @@ class Location < ApplicationRecord
   #   @name = options[:name]
   # end
 
+  def check_existence(file)
+    true
+  end
+
   def get_json
     # parsed_file = {}
     #

@@ -20,12 +20,12 @@ RSpec.describe Location, type: :model do
 
   context 'when given a valid region name' do
     context 'and .get_json is called' do
-      context 'check for existing region cache file' do
+      context 'call .check_existence' do
         context 'if file exists' do
           it 'return true' do
             location = Location.new(name: 'Oceania', region: true, city: false)
-            response = location.get_json
-            url = "https://nomadlist.com/api/v2/list/regions"
+            file = "cache/region_cache.json"
+            response = location.check_existence(file)
 
             expect(response).to eq true
           end
