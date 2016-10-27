@@ -12,7 +12,7 @@ class Location < ApplicationRecord
   # end
 
   def check_existence(file)
-    true
+    File.exists?(file)
   end
 
   def get_json
