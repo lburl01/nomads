@@ -15,6 +15,12 @@ class Location < ApplicationRecord
     File.exists?(file)
   end
 
+  def write_file_if_none(file)
+    if check_existence(file) == false
+      f = File.new("cache/region_cache2.json")
+    end
+  end
+
   def get_json
     # parsed_file = {}
     #
