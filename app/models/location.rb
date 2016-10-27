@@ -17,7 +17,7 @@ class Location < ApplicationRecord
 
   def write_file_if_none(file)
     if check_existence(file) == false
-      f = File.new("cache/region_cache2.json")
+      f = File.new("cache/region_cache.json")
     end
   end
 

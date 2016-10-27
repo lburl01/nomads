@@ -30,18 +30,18 @@ RSpec.describe Location, type: :model do
             expect(response).to eq true
           end
         end
-      end
-      context 'if file does not exist' do
-        context 'call .write_file_if_none' do
-          it 'creates a new file' do
-            location = Location.new(name: 'Oceania', region: true, city: false)
+        context 'if file does not exist' do
+          context 'call .write_file_if_none' do
+            it 'creates a new file' do
+              location = Location.new(name: 'Oceania', region: true, city: false)
 
-            allow(location).to receive(:write_file_if_none).and_return(File.new("cache/region_cache.json"))
+              allow(location).to receive(:write_file_if_none).and_return(File.new("cache/region_cache.json"))
 
-            file = "cache/region_cache.json"
-            response = location.check_existence(file)
+              file = "cache/region_cache.json"
+              response = location.check_existence(file)
 
-            expect(File.exist?(file)).to eq true
+              expect(File.exist?(file)).to eq true
+            end
           end
         end
       end
